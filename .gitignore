@@ -1,0 +1,16 @@
+# Data (keep folders, ignore contents)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / Editor
+.DS_Store
+.vscode/
