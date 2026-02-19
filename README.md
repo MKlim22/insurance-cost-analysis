@@ -19,6 +19,7 @@ Place the dataset here:
 
 ## Project Structure
 
+```text
 insurance-cost-analysis/
 ├─ README.md
 ├─ .gitignore
