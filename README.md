@@ -19,7 +19,7 @@ Place the dataset here:
 
 ## Project Structure
 
-```text
+```
 insurance-cost-analysis/
 ├─ README.md
 ├─ .gitignore
@@ -35,6 +35,7 @@ insurance-cost-analysis/
 ├─ src/
 └─ reports/
 └─ figures/
+```
 
 ## How to Run (local)
 1. Create environment and install requirements
