@@ -1,4 +1,4 @@
-# Insurance Cost Analysis
+## Insurance Cost Analysis
 
 ## Overview
 This project analyzes an insurance charges dataset and builds regression models to predict **charges**.
@@ -42,7 +42,13 @@ insurance-cost-analysis/
 2. Run notebooks in order from `notebooks/`
 
 ## Results
-(To be added)
+The final interaction model (including BMI x Smoking) achieved:
+- R² ~ 0.88
+- Lower MAE and RMSE compared to alternative specifications
+
+Smoking status was identified as the strongest predictor of insurance cherges. A significant interaction effect between BMI and smoking was observed, indicating that BMI increases costs substantially more among smokers.
+
+The interaction model without log transformation was selected as the final specification.
 
 ## Future Improvements
 - Compare additional models (e.g., RandomForestRegressor)
