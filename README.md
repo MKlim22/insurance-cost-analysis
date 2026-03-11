@@ -3,6 +3,13 @@
 ## Overview
 This project analyzes an insurance charges dataset and builds regression models to predict **charges**.
 
+## Business Problem
+
+Health insurance providers need to estimate medical costs based on customer characteristics such as age, BMI, smoking status, and family size.
+
+The goal of this project is to analyze the factors that influence insurance charges and build regression models capable of predicting medical costs.
+Understanding these relationships helps insurers better assess risk and design more accurate pricing models.
+
 ## Objectives
 - Load the dataset into a pandas DataFrame
 - Clean the data (handle missing/blank entries)
@@ -16,6 +23,17 @@ To keep the repository clean and reproducible, the dataset file is not committed
 
 Place the dataset here:
 - `data/raw/insurance.csv`
+
+## Methodology
+
+The analysis follows a structured data science workflow:
+1. Data loading and cleaning
+2. Exploratory Data Analysis (EDA)
+3. Baseline Linear Regression model
+4. Interaction feature engineering (BMI x Smoking)
+5. Residual analysis and model diagnostics
+6. Model refinement using log transformation
+7. Final model evaluation using R², MAE, and RMSE
 
 ## Project Structure
 
@@ -46,9 +64,16 @@ The final interaction model (including BMI x Smoking) achieved:
 - R² ~ 0.88
 - Lower MAE and RMSE compared to alternative specifications
 
-Smoking status was identified as the strongest predictor of insurance cherges. A significant interaction effect between BMI and smoking was observed, indicating that BMI increases costs substantially more among smokers.
+Smoking status was identified as the most influential factor affecting insurance cherges, with a strong interaction effect between BMI and smoking.
 
-The interaction model without log transformation was selected as the final specification.
+## Key Insights
+
+- Smoking status is the strongest predictor of insurance charges
+- BMI significantly increases medical costs among smokers
+- Age has a steady positive effect on insurance costs
+- Lifestyle-related factors play a major role in insurance pricing
+
+The interaction model (BMI x Smoking) achieved the best performance with an R² of approximately 0.88.
 
 ## Future Improvements
 - Compare additional models (e.g., RandomForestRegressor)
