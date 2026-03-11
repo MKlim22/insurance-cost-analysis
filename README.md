@@ -30,7 +30,7 @@ The analysis follows a structured data science workflow:
 1. Data loading and cleaning
 2. Exploratory Data Analysis (EDA)
 3. Baseline Linear Regression model
-4. Interaction feature engineering (BMI x Smoking)
+4. Feature engineering (BMI x Smoking interaction)
 5. Residual analysis and model diagnostics
 6. Model refinement using log transformation
 7. Final model evaluation using R², MAE, and RMSE
@@ -50,7 +50,7 @@ insurance-cost-analysis/
 │ ├─ 02_eda.ipynb
 │ ├─ 03_modeling.ipynb
 │ └─ 04_refinement.ipynb
-├─ src/
+|
 └─ reports/
 └─ figures/
 ```
