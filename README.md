@@ -39,12 +39,15 @@ The analysis follows a structured data science workflow:
 
 ```
 insurance-cost-analysis/
+|
 ├─ README.md
 ├─ .gitignore
 ├─ requirements.txt
+|
 ├─ data/
 │ ├─ raw/
 │ └─ processed/
+|
 ├─ notebooks/
 │ ├─ 01_import_clean.ipynb
 │ ├─ 02_eda.ipynb
@@ -53,6 +56,7 @@ insurance-cost-analysis/
 |
 └─ reports/
 └─ figures/
+    └─ dashboard_insurance.png
 ```
 
 ## How to Run (local)
@@ -79,3 +83,7 @@ The interaction model (BMI x Smoking) achieved the best performance with an R² 
 - Compare additional models (e.g., RandomForestRegressor)
 - Add proper train/validation/test workflow and cross-validation
 - Package reusable functions in `src/`
+
+## Dashboard Preview
+
+![Insurance Dashboard](reports/figures/dashboard_insurance.png)
