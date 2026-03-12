@@ -86,4 +86,7 @@ The interaction model (BMI x Smoking) achieved the best performance with an R² 
 
 ## Dashboard Preview
 
+The Power BI dashboard visializes the key drivers of medical insurance charges identified during the analysis.
+It highlights the impact of smoking status, BMI, age, and geographic region on insurance costs.
+
 ![Insurance Dashboard](reports/figures/dashboard_insurance.png)
